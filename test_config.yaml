@@ -1,0 +1,8 @@
+foo:
+    name: foo
+    upstream_url: http://foo.com/
+    request_host: foo.com
+#mockbin:
+#    name: mockbin
+#    upstream_url: http://mockbin.com/
+#    request_host: mockbin.com
