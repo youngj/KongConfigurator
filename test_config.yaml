@@ -1,8 +1,18 @@
-foo:
-    name: foo
-    upstream_url: http://foo.com/
-    request_host: foo.com
-#mockbin:
-#    name: mockbin
-#    upstream_url: http://mockbin.com/
-#    request_host: mockbin.com
+apis:
+    foo:
+        name: foo
+        upstream_url: http://foo.com/
+        request_host: foo.com
+    mockbin:
+        name: mockbin
+        upstream_url: http://mockbin.com/
+        request_host: mockbin.com
+
+plugins:
+    foo:
+        rate-limiting:
+            config.hour: 10000
+            config.second: 5
+        key-auth:
+            config.key_names: ['apikey']
+
